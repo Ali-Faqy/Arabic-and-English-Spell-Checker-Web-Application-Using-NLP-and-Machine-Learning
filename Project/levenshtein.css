@@ -1,0 +1,167 @@
+* {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* Set text direction to right-to-left */
+}
+
+body {
+    background-color: cornflowerblue;
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.inputData {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+#inputText {
+    padding: 10px;
+    width: 500px;
+    height: 200px;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+}
+
+#inputFile {
+    margin-top: 20px;
+    background-color: rgb(60, 82, 122);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 500px;
+}
+
+#inputFile:hover {
+    background-color: hsl(212, 86%, 14%);
+}
+
+#correctButton {
+    margin-top: 20px;
+    width: 500px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#correctButton:hover {
+    background-color: darkblue;
+}
+
+.outputData {
+    max-height: 600px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: darkblue transparent;
+    padding-right: 30px; /* Adjust padding for right-to-left */
+}
+
+.outputData::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.outputData::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+#BackBtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 999;
+}
+
+#BackBtn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+.table th,
+.table td {
+    border-bottom: 1px solid #ddd;
+    color: rgb(25, 9, 57);
+    padding: 10px;
+    text-align: right; /* Adjust text alignment for right-to-left */
+}
+
+.table th {
+    color: white;
+}
+
+.table td {
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+thead {
+    font-family: "Poppins", sans-serif;
+    background-color: #375a7f;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#head1 {
+    width: 850px;
+}
+
+.table td i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.table td i:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}

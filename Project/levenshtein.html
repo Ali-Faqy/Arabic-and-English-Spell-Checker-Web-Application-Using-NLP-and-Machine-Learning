@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="arabic.jpg">
+    <link rel="stylesheet" href="levenshtein.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css "/>
+    <title>التدقيق الإملائي بالعربية</title>
+</head>
+<body>
+    <div class="header">
+        <h1>التدقيق الإملائي باللغة العربية</h1>
+    </div>
+
+    <div class="container">
+        <div class="inputData">
+            <textarea id="inputText" placeholder="أدخل النص"></textarea>
+            <label id="fileLabel"></label>
+            <input type="file" id="inputFile" accept=".txt">
+            <button id="correctButton">تصحيح</button>
+        </div>
+
+        <div class="outputData">
+            <div id="outputContainer">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th id="head1">النصوص الصحيحة المحتملة</th>
+                            <th>الإجراء</th>
+                        </tr>
+                    </thead>
+                    <tbody id="outputTableBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <a href="index.html">
+        <button id="BackBtn"><i class="fa-solid fa-arrow-left"></i> العودة</button>
+    </a>
+
+    <script src="levenshtein.js"></script>
+</body>
+</html>

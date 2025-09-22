@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="arabic.jpg">
+    <link rel="stylesheet" href="arabicPage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css "/>
+    <title>التدقيق الإملائي بالعربية</title>
+</head>
+<body>
+    <div class="header">
+        <h1>التدقيق الإملائي باللغة العربية</h1>
+    </div>
+
+    <div class="container">
+        <div class="inputData">
+            <textarea id="inputText" placeholder="أدخل النص"></textarea>
+            <label id="fileLabel"></label>
+            <input type="file" id="inputFile" accept=".txt">
+            <button id="correctButton">تصحيح</button>
+        </div>
+
+        <div class="outputData">
+            <div id="outputContainer">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th id="head1">النص الصحيح</th>
+                            <th>الإجراء</th>
+                        </tr>
+                    </thead>
+                    <tbody id="outputTableBody">
+                        <!-- <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aperiam esse, quam ex, a voluptates vel quos inventore fugit et rerum nobis quia sapiente, aut quaerat itaque iusto illum tempora magnam. Labore a obcaecati inventore temporibus quidem, aspernatur delectus modi perferendis officia, accusamus quibusdam repellendus? Accusamus aliquam vitae saepe est illum vero labore obcaecati suscipit? Suscipit, itaque praesentium? Aliquam, repudiandae inventore. Quaerat doloribus impedit doloremque iusto rerum temporibus ipsam. Magnam, vero nemo corrupti maxime, quae commodi eos, placeat aliquid illum deserunt in ut repellendus ipsum impedit tempora. Natus perferendis, esse officiis laborum minima sequi adipisci tempora illo vel praesentium sed corporis, pariatur culpa fuga quas, rerum doloremque expedita dolorum. Blanditiis distinctio odit vero quibusdam labore rerum nostrum tempora quam, nobis impedit, expedita ipsum veniam exercitationem quo nesciunt? Ratione corrupti nesciunt error! Eaque temporibus voluptates voluptatem voluptate necessitatibus, itaque, beatae aliquam fugit eligendi unde numquam aperiam explicabo dolorem doloremque molestiae, hic ad debitis expedita reiciendis. Blanditiis enim natus aliquam, ea omnis alias sed ipsum cum similique labore laudantium maxime, sapiente deserunt atque quo. Incidunt, nobis, odio quis tempore distinctio consequuntur possimus delectus ipsa facere amet dolore. Fugit, explicabo. Aut blanditiis eius aperiam tenetur, ducimus rem dolorum excepturi similique odio, tempora facere.</td>
+                            <td><i class="fa-solid fa-download"></i><i class="fa-solid fa-eye"></i>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <a href="index.html">
+        <button id="BackBtn"><i class="fa-solid fa-arrow-left"></i> العودة</button>
+    </a>
+
+    <script src="arabicPage.js"></script>
+</body>
+</html>

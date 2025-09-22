@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Text</title>
+</head>
+<body>
+    <div id="viewDataContainer"></div>
+
+    <script>
+        const item = JSON.parse(localStorage.getItem("item"));
+
+        const viewDataContainer = document.getElementById("viewDataContainer");
+        viewDataContainer.textContent = JSON.stringify(item);
+
+    </script>
+</body>
+</html>
